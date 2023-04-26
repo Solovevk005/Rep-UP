@@ -53,14 +53,13 @@ namespace УП_ИСРПО
                             frm3.btnDobovlenie.Visible = true;
                             frm3.button6.Visible = true;
                             frm3.button10.Visible = true;
-
-
-                        frm3.Show();
+                            frm3.Show();
                             this.Hide();
                         }
                         else if (role_Login == "False")
                         {
                             Form3 frm5 = new Form3();
+
                             frm5.button5.Visible = false;
                             frm5.button9.Visible = false;
                             frm5.button11.Visible = false;
