@@ -56,12 +56,12 @@
             this.датапродажиDataGridViewTextBoxColumn,
             this.способоплатыDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.продажаБилетовBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 25);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 24);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(765, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(676, 125);
             this.dataGridView1.TabIndex = 0;
             // 
             // кодпродажиDataGridViewTextBoxColumn
@@ -121,8 +121,8 @@
             // btnClose_P
             // 
             this.btnClose_P.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnClose_P.Location = new System.Drawing.Point(18, 291);
-            this.btnClose_P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose_P.Location = new System.Drawing.Point(40, 189);
+            this.btnClose_P.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose_P.Name = "btnClose_P";
             this.btnClose_P.Size = new System.Drawing.Size(149, 44);
             this.btnClose_P.TabIndex = 1;
@@ -135,11 +135,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(797, 358);
+            this.ClientSize = new System.Drawing.Size(770, 266);
             this.Controls.Add(this.btnClose_P);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form4";
             this.Text = "Проданные билеты";
             this.Load += new System.EventHandler(this.Form4_Load);

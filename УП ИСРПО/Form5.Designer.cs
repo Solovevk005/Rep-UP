@@ -56,12 +56,12 @@
             this.кодпассажираDataGridViewTextBoxColumn,
             this.датавозвратаDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.возвратБилетовBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 13);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(702, 199);
+            this.dataGridView1.Size = new System.Drawing.Size(677, 110);
             this.dataGridView1.TabIndex = 0;
             // 
             // кодвозвратаDataGridViewTextBoxColumn
@@ -121,8 +121,8 @@
             // btnClose_V
             // 
             this.btnClose_V.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnClose_V.Location = new System.Drawing.Point(13, 255);
-            this.btnClose_V.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose_V.Location = new System.Drawing.Point(27, 149);
+            this.btnClose_V.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose_V.Name = "btnClose_V";
             this.btnClose_V.Size = new System.Drawing.Size(139, 46);
             this.btnClose_V.TabIndex = 1;
@@ -135,11 +135,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(745, 317);
+            this.ClientSize = new System.Drawing.Size(745, 223);
             this.Controls.Add(this.btnClose_V);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
             this.Text = "Возврат билета";
             this.Load += new System.EventHandler(this.Form5_Load);
