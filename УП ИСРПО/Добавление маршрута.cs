@@ -27,7 +27,7 @@ namespace УП_ИСРПО
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDob_Click(object sender, EventArgs e)
         {
             if (comboBox1.Text!= "" && textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
             {

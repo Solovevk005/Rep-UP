@@ -24,7 +24,7 @@ namespace УП_ИСРПО
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_P_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form3 fr1= new Form3();

@@ -38,7 +38,7 @@
             this.продажаБилетовBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.solovevkDataSet1 = new УП_ИСРПО.SolovevkDataSet1();
             this.продажа_билетовTableAdapter = new УП_ИСРПО.SolovevkDataSet1TableAdapters.Продажа_билетовTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClose_P = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.продажаБилетовBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet1)).BeginInit();
@@ -46,6 +46,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -55,11 +56,12 @@
             this.датапродажиDataGridViewTextBoxColumn,
             this.способоплатыDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.продажаБилетовBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 25);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(677, 181);
+            this.dataGridView1.Size = new System.Drawing.Size(765, 228);
             this.dataGridView1.TabIndex = 0;
             // 
             // кодпродажиDataGridViewTextBoxColumn
@@ -116,23 +118,28 @@
             // 
             this.продажа_билетовTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
+            // btnClose_P
             // 
-            this.button1.Location = new System.Drawing.Point(46, 266);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClose_P.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnClose_P.Location = new System.Drawing.Point(18, 291);
+            this.btnClose_P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose_P.Name = "btnClose_P";
+            this.btnClose_P.Size = new System.Drawing.Size(149, 44);
+            this.btnClose_P.TabIndex = 1;
+            this.btnClose_P.Text = "Назад";
+            this.btnClose_P.UseVisualStyleBackColor = true;
+            this.btnClose_P.Click += new System.EventHandler(this.btnClose_P_Click);
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(797, 358);
+            this.Controls.Add(this.btnClose_P);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form4";
             this.Text = "Проданные билеты";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -154,6 +161,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn кодпассажираDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датапродажиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn способоплатыDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClose_P;
     }
 }

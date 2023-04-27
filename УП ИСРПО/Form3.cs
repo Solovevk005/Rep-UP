@@ -26,7 +26,7 @@ namespace УП_ИСРПО
             this.расписаниеTableAdapter.Fill(this.solovevkDataSet3.Расписание);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnProd_Click(object sender, EventArgs e)
         {
             Form4 fr3 = new Form4();
             fr3.Show();
@@ -34,7 +34,7 @@ namespace УП_ИСРПО
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnVoz_Click(object sender, EventArgs e)
         {
             Form5 fr2 = new Form5();
             fr2.Show();
@@ -42,14 +42,14 @@ namespace УП_ИСРПО
         }
         
         //поиск динамический
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtPoisk_TextChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
                 dataGridView1.Rows[i].Selected = false;
                 for (int j = 0; j < dataGridView1.ColumnCount; j++)
                     if (dataGridView1.Rows[i].Cells[j].Value != null)
-                        if (dataGridView1.Rows[i].Cells[j].Value.ToString().Contains(textBox1.Text))
+                        if (dataGridView1.Rows[i].Cells[j].Value.ToString().Contains(txtPoisk.Text))
                         {
                             dataGridView1.Rows[i].Selected = true;
                             break;
@@ -58,7 +58,7 @@ namespace УП_ИСРПО
         }
 
         //фильтр
-        private void button4_Click(object sender, EventArgs e)
+        private void btnFiltr_1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
@@ -66,7 +66,7 @@ namespace УП_ИСРПО
                 dataGridView1.Rows[i].Visible = false;
                 for (int j = 0; j < dataGridView1.ColumnCount; j++)
                 {
-                    if (dataGridView1.Rows[i].Cells[j].Value.ToString().Contains(textBox2.Text))
+                    if (dataGridView1.Rows[i].Cells[j].Value.ToString().Contains(txtFiltr.Text))
                     {
                         dataGridView1.Rows[i].Visible = true;
                         break;
@@ -76,14 +76,14 @@ namespace УП_ИСРПО
         }
 
         //поиск
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPoisk_1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
                 dataGridView1.Rows[i].Selected = false;
                 for (int j = 0; j < dataGridView1.ColumnCount; j++)
                     if (dataGridView1.Rows[i].Cells[j].Value != null)
-                        if (dataGridView1.Rows[i].Cells[j].Value.ToString().Contains(textBox1.Text))
+                        if (dataGridView1.Rows[i].Cells[j].Value.ToString().Contains(txtPoisk.Text))
                         {
                             dataGridView1.Rows[i].Selected = true;
                             break;
@@ -92,7 +92,7 @@ namespace УП_ИСРПО
         }
 
         //удаление
-        private void button5_Click(object sender, EventArgs e)
+        private void btnDelete_1_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
@@ -112,14 +112,14 @@ namespace УП_ИСРПО
 
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void txtPoisk_1_TextChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView2.RowCount; i++)
             {
                 dataGridView2.Rows[i].Selected = false;
                 for (int j = 0; j < dataGridView2.ColumnCount; j++)
                     if (dataGridView2.Rows[i].Cells[j].Value != null)
-                        if (dataGridView2.Rows[i].Cells[j].Value.ToString().Contains(textBox4.Text))
+                        if (dataGridView2.Rows[i].Cells[j].Value.ToString().Contains(txtPoisk_1.Text))
                         {
                             dataGridView2.Rows[i].Selected = true;
                             break;
@@ -127,14 +127,14 @@ namespace УП_ИСРПО
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void btnPoisk_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView2.RowCount; i++)
             {
                 dataGridView2.Rows[i].Selected = false;
                 for (int j = 0; j < dataGridView2.ColumnCount; j++)
                     if (dataGridView2.Rows[i].Cells[j].Value != null)
-                        if (dataGridView2.Rows[i].Cells[j].Value.ToString().Contains(textBox4.Text))
+                        if (dataGridView2.Rows[i].Cells[j].Value.ToString().Contains(txtPoisk_1.Text))
                         {
                             dataGridView2.Rows[i].Selected = true;
                             break;
@@ -143,7 +143,7 @@ namespace УП_ИСРПО
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnFiltr_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView2.Rows.Count - 1; i++)
             {
@@ -151,7 +151,7 @@ namespace УП_ИСРПО
                 dataGridView2.Rows[i].Visible = false;
                 for (int j = 0; j < dataGridView2.ColumnCount; j++)
                 {
-                    if (dataGridView2.Rows[i].Cells[j].Value.ToString().Contains(textBox3.Text))
+                    if (dataGridView2.Rows[i].Cells[j].Value.ToString().Contains(txtFiltr_1.Text))
                     {
                         dataGridView2.Rows[i].Visible = true;
                         break;
@@ -160,7 +160,7 @@ namespace УП_ИСРПО
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView2.SelectedRows)
             {
@@ -168,7 +168,7 @@ namespace УП_ИСРПО
             }
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnSave_1_Click(object sender, EventArgs e)
         {
             string sql = @"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk";
             SqlConnection con = new SqlConnection(sql);
@@ -179,7 +179,7 @@ namespace УП_ИСРПО
             MessageBox.Show("Вы успешно обновили базу даныых");
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             string sql = @"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk";
             SqlConnection con = new SqlConnection(sql);
@@ -190,7 +190,7 @@ namespace УП_ИСРПО
             MessageBox.Show("Вы успешно обновили базу даныых");
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void btnDobovlenie_1_Click(object sender, EventArgs e)
         {
             Form6 frm= new Form6();
             frm.Show();
@@ -202,6 +202,11 @@ namespace УП_ИСРПО
             this.Hide();
             Form1 fr = new Form1();
             fr.Show();
+        }
+
+        private void txtFiltr_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

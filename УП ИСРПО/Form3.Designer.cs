@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnProd = new System.Windows.Forms.Button();
+            this.btnVoz = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.кодрасписанияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.кодпоездаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +44,11 @@
             this.расписаниеBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.solovevkDataSet3 = new УП_ИСРПО.SolovevkDataSet3();
             this.расписаниеTableAdapter = new УП_ИСРПО.SolovevkDataSet3TableAdapters.РасписаниеTableAdapter();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txtPoisk = new System.Windows.Forms.TextBox();
+            this.btnPoisk_1 = new System.Windows.Forms.Button();
+            this.btnFiltr_1 = new System.Windows.Forms.Button();
+            this.txtFiltr = new System.Windows.Forms.TextBox();
+            this.btnDelete_1 = new System.Windows.Forms.Button();
             this.btnDobovlenie = new System.Windows.Forms.Button();
             this.маршрутыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.solovevkDataSet5 = new УП_ИСРПО.SolovevkDataSet5();
@@ -62,15 +62,17 @@
             this.маршрутыBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.solovevkDataSet6 = new УП_ИСРПО.SolovevkDataSet6();
             this.маршрутыTableAdapter = new УП_ИСРПО.SolovevkDataSet6TableAdapters.МаршрутыTableAdapter();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnFiltr = new System.Windows.Forms.Button();
+            this.txtFiltr_1 = new System.Windows.Forms.TextBox();
+            this.btnPoisk = new System.Windows.Forms.Button();
+            this.txtPoisk_1 = new System.Windows.Forms.TextBox();
+            this.btnSave_1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnDobovlenie_1 = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet3)).BeginInit();
@@ -81,33 +83,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btnProd
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.Location = new System.Drawing.Point(28, 426);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Продажа";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnProd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnProd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnProd.Location = new System.Drawing.Point(13, 389);
+            this.btnProd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProd.Name = "btnProd";
+            this.btnProd.Size = new System.Drawing.Size(147, 33);
+            this.btnProd.TabIndex = 2;
+            this.btnProd.Text = "Продажа";
+            this.btnProd.UseVisualStyleBackColor = true;
+            this.btnProd.Click += new System.EventHandler(this.btnProd_Click);
             // 
-            // button3
+            // btnVoz
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button3.Location = new System.Drawing.Point(200, 426);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Возврат билетов";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnVoz.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnVoz.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnVoz.Location = new System.Drawing.Point(167, 389);
+            this.btnVoz.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVoz.Name = "btnVoz";
+            this.btnVoz.Size = new System.Drawing.Size(147, 33);
+            this.btnVoz.TabIndex = 3;
+            this.btnVoz.Text = "Возврат билетов";
+            this.btnVoz.UseVisualStyleBackColor = true;
+            this.btnVoz.Click += new System.EventHandler(this.btnVoz_Click);
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -121,11 +125,12 @@
             this.датаотправлениеDataGridViewTextBoxColumn,
             this.датаприбытияDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.расписаниеBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 22);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 62);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(742, 308);
+            this.dataGridView1.Size = new System.Drawing.Size(742, 208);
             this.dataGridView1.TabIndex = 4;
             // 
             // кодрасписанияDataGridViewTextBoxColumn
@@ -214,64 +219,77 @@
             // 
             this.расписаниеTableAdapter.ClearBeforeFill = true;
             // 
-            // textBox1
+            // txtPoisk
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(142, 346);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 28);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtPoisk.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtPoisk.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPoisk.Location = new System.Drawing.Point(167, 294);
+            this.txtPoisk.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPoisk.Multiline = true;
+            this.txtPoisk.Name = "txtPoisk";
+            this.txtPoisk.Size = new System.Drawing.Size(257, 32);
+            this.txtPoisk.TabIndex = 5;
+            this.txtPoisk.TextChanged += new System.EventHandler(this.txtPoisk_TextChanged);
             // 
-            // button1
+            // btnPoisk_1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Location = new System.Drawing.Point(28, 346);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 28);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Поиск";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPoisk_1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnPoisk_1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnPoisk_1.Location = new System.Drawing.Point(13, 294);
+            this.btnPoisk_1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPoisk_1.Name = "btnPoisk_1";
+            this.btnPoisk_1.Size = new System.Drawing.Size(147, 33);
+            this.btnPoisk_1.TabIndex = 6;
+            this.btnPoisk_1.Text = "Поиск";
+            this.btnPoisk_1.UseVisualStyleBackColor = true;
+            this.btnPoisk_1.Click += new System.EventHandler(this.btnPoisk_1_Click);
             // 
-            // button4
+            // btnFiltr_1
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button4.Location = new System.Drawing.Point(28, 380);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(97, 28);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Фильтр";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnFiltr_1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnFiltr_1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnFiltr_1.Location = new System.Drawing.Point(13, 335);
+            this.btnFiltr_1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFiltr_1.Name = "btnFiltr_1";
+            this.btnFiltr_1.Size = new System.Drawing.Size(147, 33);
+            this.btnFiltr_1.TabIndex = 8;
+            this.btnFiltr_1.Text = "Фильтр";
+            this.btnFiltr_1.UseVisualStyleBackColor = true;
+            this.btnFiltr_1.Click += new System.EventHandler(this.btnFiltr_1_Click);
             // 
-            // textBox2
+            // txtFiltr
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(142, 380);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(251, 28);
-            this.textBox2.TabIndex = 7;
+            this.txtFiltr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtFiltr.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtFiltr.Location = new System.Drawing.Point(167, 335);
+            this.txtFiltr.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFiltr.Multiline = true;
+            this.txtFiltr.Name = "txtFiltr";
+            this.txtFiltr.Size = new System.Drawing.Size(257, 32);
+            this.txtFiltr.TabIndex = 7;
+            this.txtFiltr.TextChanged += new System.EventHandler(this.txtFiltr_TextChanged);
             // 
-            // button5
+            // btnDelete_1
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button5.Location = new System.Drawing.Point(422, 346);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 28);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Удалить";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnDelete_1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDelete_1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDelete_1.Location = new System.Drawing.Point(456, 294);
+            this.btnDelete_1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete_1.Name = "btnDelete_1";
+            this.btnDelete_1.Size = new System.Drawing.Size(147, 33);
+            this.btnDelete_1.TabIndex = 9;
+            this.btnDelete_1.Text = "Удалить";
+            this.btnDelete_1.UseVisualStyleBackColor = true;
+            this.btnDelete_1.Click += new System.EventHandler(this.btnDelete_1_Click);
             // 
             // btnDobovlenie
             // 
             this.btnDobovlenie.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnDobovlenie.Location = new System.Drawing.Point(1350, 346);
+            this.btnDobovlenie.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDobovlenie.Location = new System.Drawing.Point(1373, 294);
+            this.btnDobovlenie.Margin = new System.Windows.Forms.Padding(4);
             this.btnDobovlenie.Name = "btnDobovlenie";
-            this.btnDobovlenie.Size = new System.Drawing.Size(173, 28);
+            this.btnDobovlenie.Size = new System.Drawing.Size(147, 33);
             this.btnDobovlenie.TabIndex = 10;
             this.btnDobovlenie.Text = "Добавление маршрута";
             this.btnDobovlenie.UseVisualStyleBackColor = true;
@@ -289,9 +307,7 @@
             // 
             // dataGridView2
             // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -302,11 +318,12 @@
             this.датаотправлениеDataGridViewTextBoxColumn1,
             this.станцияDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.маршрутыBindingSource1;
-            this.dataGridView2.Location = new System.Drawing.Point(803, 22);
+            this.dataGridView2.Location = new System.Drawing.Point(778, 62);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(720, 308);
+            this.dataGridView2.Size = new System.Drawing.Size(742, 208);
             this.dataGridView2.TabIndex = 11;
             // 
             // кодмаршрутаDataGridViewTextBoxColumn1
@@ -372,127 +389,172 @@
             // 
             this.маршрутыTableAdapter.ClearBeforeFill = true;
             // 
-            // button6
+            // btnDelete
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button6.Location = new System.Drawing.Point(1197, 346);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 28);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Удалить";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDelete.Location = new System.Drawing.Point(1220, 294);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(147, 33);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "Удалить";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button7
+            // btnFiltr
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button7.Location = new System.Drawing.Point(803, 380);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(114, 28);
-            this.button7.TabIndex = 15;
-            this.button7.Text = "Фильтр";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnFiltr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnFiltr.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnFiltr.Location = new System.Drawing.Point(778, 335);
+            this.btnFiltr.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFiltr.Name = "btnFiltr";
+            this.btnFiltr.Size = new System.Drawing.Size(147, 33);
+            this.btnFiltr.TabIndex = 15;
+            this.btnFiltr.Text = "Фильтр";
+            this.btnFiltr.UseVisualStyleBackColor = true;
+            this.btnFiltr.Click += new System.EventHandler(this.btnFiltr_Click);
             // 
-            // textBox3
+            // txtFiltr_1
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox3.Location = new System.Drawing.Point(923, 380);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 28);
-            this.textBox3.TabIndex = 14;
+            this.txtFiltr_1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtFiltr_1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtFiltr_1.Location = new System.Drawing.Point(931, 335);
+            this.txtFiltr_1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFiltr_1.Multiline = true;
+            this.txtFiltr_1.Name = "txtFiltr_1";
+            this.txtFiltr_1.Size = new System.Drawing.Size(277, 32);
+            this.txtFiltr_1.TabIndex = 14;
             // 
-            // button8
+            // btnPoisk
             // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button8.Location = new System.Drawing.Point(803, 346);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(114, 28);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Поиск";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btnPoisk.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnPoisk.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnPoisk.Location = new System.Drawing.Point(778, 294);
+            this.btnPoisk.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPoisk.Name = "btnPoisk";
+            this.btnPoisk.Size = new System.Drawing.Size(147, 33);
+            this.btnPoisk.TabIndex = 13;
+            this.btnPoisk.Text = "Поиск";
+            this.btnPoisk.UseVisualStyleBackColor = true;
+            this.btnPoisk.Click += new System.EventHandler(this.btnPoisk_Click);
             // 
-            // textBox4
+            // txtPoisk_1
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox4.Location = new System.Drawing.Point(923, 346);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(262, 28);
-            this.textBox4.TabIndex = 12;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtPoisk_1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtPoisk_1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPoisk_1.Location = new System.Drawing.Point(931, 294);
+            this.txtPoisk_1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPoisk_1.Multiline = true;
+            this.txtPoisk_1.Name = "txtPoisk_1";
+            this.txtPoisk_1.Size = new System.Drawing.Size(277, 32);
+            this.txtPoisk_1.TabIndex = 12;
+            this.txtPoisk_1.TextChanged += new System.EventHandler(this.txtPoisk_1_TextChanged);
             // 
-            // button9
+            // btnSave_1
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button9.Location = new System.Drawing.Point(422, 383);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(130, 28);
-            this.button9.TabIndex = 17;
-            this.button9.Text = "Сохранить";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btnSave_1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSave_1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSave_1.Location = new System.Drawing.Point(456, 339);
+            this.btnSave_1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave_1.Name = "btnSave_1";
+            this.btnSave_1.Size = new System.Drawing.Size(147, 33);
+            this.btnSave_1.TabIndex = 17;
+            this.btnSave_1.Text = "Сохранить";
+            this.btnSave_1.UseVisualStyleBackColor = true;
+            this.btnSave_1.Click += new System.EventHandler(this.btnSave_1_Click);
             // 
             // button10
             // 
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button10.Location = new System.Drawing.Point(1197, 380);
+            this.button10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button10.Location = new System.Drawing.Point(1220, 335);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(147, 28);
+            this.button10.Size = new System.Drawing.Size(147, 33);
             this.button10.TabIndex = 18;
             this.button10.Text = "Сохранить";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // button11
+            // btnDobovlenie_1
             // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button11.Location = new System.Drawing.Point(558, 346);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(212, 28);
-            this.button11.TabIndex = 19;
-            this.button11.Text = "Добавление расписание";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.btnDobovlenie_1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDobovlenie_1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDobovlenie_1.Location = new System.Drawing.Point(609, 294);
+            this.btnDobovlenie_1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDobovlenie_1.Name = "btnDobovlenie_1";
+            this.btnDobovlenie_1.Size = new System.Drawing.Size(147, 33);
+            this.btnDobovlenie_1.TabIndex = 19;
+            this.btnDobovlenie_1.Text = "Добавление расписание";
+            this.btnDobovlenie_1.UseVisualStyleBackColor = true;
+            this.btnDobovlenie_1.Click += new System.EventHandler(this.btnDobovlenie_1_Click);
             // 
             // btnClose
             // 
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnClose.Location = new System.Drawing.Point(28, 472);
+            this.btnClose.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnClose.Location = new System.Drawing.Point(13, 444);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(166, 40);
+            this.btnClose.Size = new System.Drawing.Size(147, 33);
             this.btnClose.TabIndex = 20;
             this.btnClose.Text = "Назад";
             this.btnClose.UseMnemonic = false;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(22, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 19);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Информация о расписанях:";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(783, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(218, 19);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Информация о маршрутах:";
+            // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1535, 700);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1533, 513);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.btnDobovlenie_1);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.btnSave_1);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnFiltr);
+            this.Controls.Add(this.txtFiltr_1);
+            this.Controls.Add(this.btnPoisk);
+            this.Controls.Add(this.txtPoisk_1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btnDobovlenie);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnDelete_1);
+            this.Controls.Add(this.btnFiltr_1);
+            this.Controls.Add(this.txtFiltr);
+            this.Controls.Add(this.btnPoisk_1);
+            this.Controls.Add(this.txtPoisk);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnVoz);
+            this.Controls.Add(this.btnProd);
+            this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.Text = "Главная ";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -510,8 +572,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnProd;
+        private System.Windows.Forms.Button btnVoz;
         private System.Windows.Forms.DataGridView dataGridView1;
         private SolovevkDataSet3 solovevkDataSet3;
         private System.Windows.Forms.BindingSource расписаниеBindingSource;
@@ -525,10 +587,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn регионDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаотправлениеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаприбытияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPoisk;
+        private System.Windows.Forms.Button btnPoisk_1;
+        private System.Windows.Forms.Button btnFiltr_1;
+        private System.Windows.Forms.TextBox txtFiltr;
         private System.Windows.Forms.BindingSource маршрутыBindingSource;
         private SolovevkDataSet5 solovevkDataSet5;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -541,16 +603,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn пунктприбытияDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаотправлениеDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn станцияDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnFiltr;
+        private System.Windows.Forms.TextBox txtFiltr_1;
+        private System.Windows.Forms.Button btnPoisk;
+        private System.Windows.Forms.TextBox txtPoisk_1;
         private System.Windows.Forms.Button btnClose;
-        public System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button btnDelete_1;
         public System.Windows.Forms.Button btnDobovlenie;
-        public System.Windows.Forms.Button button6;
-        public System.Windows.Forms.Button button9;
+        public System.Windows.Forms.Button btnDelete;
+        public System.Windows.Forms.Button btnSave_1;
         public System.Windows.Forms.Button button10;
-        public System.Windows.Forms.Button button11;
+        public System.Windows.Forms.Button btnDobovlenie_1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

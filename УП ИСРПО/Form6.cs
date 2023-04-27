@@ -44,5 +44,12 @@ namespace УП_ИСРПО
             }
 
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 fr1 = new Form3();
+            fr1.Show();
+        }
     }
 }

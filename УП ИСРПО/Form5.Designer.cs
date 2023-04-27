@@ -38,7 +38,7 @@
             this.возвратБилетовBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.solovevkDataSet2 = new УП_ИСРПО.SolovevkDataSet2();
             this.возврат_билетовTableAdapter = new УП_ИСРПО.SolovevkDataSet2TableAdapters.Возврат_билетовTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClose_V = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.возвратБилетовBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet2)).BeginInit();
@@ -46,6 +46,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -55,11 +56,12 @@
             this.кодпассажираDataGridViewTextBoxColumn,
             this.датавозвратаDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.возвратБилетовBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 167);
+            this.dataGridView1.Size = new System.Drawing.Size(702, 199);
             this.dataGridView1.TabIndex = 0;
             // 
             // кодвозвратаDataGridViewTextBoxColumn
@@ -116,23 +118,28 @@
             // 
             this.возврат_билетовTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
+            // btnClose_V
             // 
-            this.button1.Location = new System.Drawing.Point(27, 251);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClose_V.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnClose_V.Location = new System.Drawing.Point(13, 255);
+            this.btnClose_V.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose_V.Name = "btnClose_V";
+            this.btnClose_V.Size = new System.Drawing.Size(139, 46);
+            this.btnClose_V.TabIndex = 1;
+            this.btnClose_V.Text = "Назад";
+            this.btnClose_V.UseVisualStyleBackColor = true;
+            this.btnClose_V.Click += new System.EventHandler(this.btnClose_V_Click);
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(745, 317);
+            this.Controls.Add(this.btnClose_V);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form5";
             this.Text = "Возврат билета";
             this.Load += new System.EventHandler(this.Form5_Load);
@@ -154,6 +161,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn кодбилетаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодпассажираDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датавозвратаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClose_V;
     }
 }

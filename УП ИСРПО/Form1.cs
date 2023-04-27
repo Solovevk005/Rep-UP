@@ -18,7 +18,7 @@ namespace УП_ИСРПО
         public Form1()
         {
             InitializeComponent();
-            textBox2.UseSystemPasswordChar = false;
+            txtPassword.UseSystemPasswordChar = false;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -26,10 +26,10 @@ namespace УП_ИСРПО
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAvtor_Click(object sender, EventArgs e)
         {
                 SqlConnection con = new SqlConnection(@"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk");
-                string query = "Select * FROM Пользователи  WHERE Логин='" + textBox1.Text + "' and Пароль='" + textBox2.Text + "'";
+                string query = "Select * FROM Пользователи  WHERE Логин='" + txtLogin.Text + "' and Пароль='" + txtPassword.Text + "'";
                 con.Open();
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader rdr = cmd.ExecuteReader();
@@ -47,11 +47,11 @@ namespace УП_ИСРПО
                         if (role_Login == "True")
                         {
                             Form3 frm3 = new Form3();
-                            frm3.button5.Visible = true;
-                            frm3.button9.Visible = true;
-                            frm3.button11.Visible = true;
+                            frm3.btnDelete_1.Visible = true;
+                            frm3.btnSave_1.Visible = true;
+                            frm3.btnDobovlenie_1.Visible = true;
                             frm3.btnDobovlenie.Visible = true;
-                            frm3.button6.Visible = true;
+                            frm3.btnDelete.Visible = true;
                             frm3.button10.Visible = true;
                             frm3.Show();
                             this.Hide();
@@ -59,12 +59,11 @@ namespace УП_ИСРПО
                         else if (role_Login == "False")
                         {
                             Form3 frm5 = new Form3();
-
-                            frm5.button5.Visible = false;
-                            frm5.button9.Visible = false;
-                            frm5.button11.Visible = false;
+                            frm5.btnDelete_1.Visible = false;
+                            frm5.btnSave_1.Visible = false;
+                            frm5.btnDobovlenie_1.Visible = false;
                             frm5.btnDobovlenie.Visible = false;
-                            frm5.button6.Visible = false;
+                            frm5.btnDelete.Visible = false;
                             frm5.button10.Visible = false;
                             frm5.Show();
                             this.Hide();
@@ -74,11 +73,16 @@ namespace УП_ИСРПО
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnreg_Click(object sender, EventArgs e)
         {
             Form2 frm2 = new Form2();
             frm2.Show();
             this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

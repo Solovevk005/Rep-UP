@@ -23,21 +23,23 @@ namespace УП_ИСРПО
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnReg_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+            if (txtLogin_R.Text != "" && txtPassword_R.Text != "" && textBox3.Text != "")
             {
-                if (textBox3.Text == textBox2.Text)
+                if (textBox3.Text == txtPassword_R.Text)
                 {
-                    if (textBox2.Text.Length >= 6 && textBox3.Text.Length >= 6)
+                    if (txtPassword_R.Text.Length >= 6 && textBox3.Text.Length >= 6)
 
                     {
-                        string Логин = textBox1.Text.Trim();
-                        string Пароль = textBox2.Text.Trim();
+                        string Логин = txtLogin_R.Text.Trim();
+                        string Пароль = txtPassword_R.Text.Trim();
+                        string Роль = txtRole.Text.Trim();
+                        
 
 
                         SqlConnection con1 = new SqlConnection(@"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk");
-                        string query = "Select * FROM Пользователи  WHERE Логин='" + textBox1.Text + "' and Пароль='" + textBox2.Text + "'";
+                        string query = "Select * FROM Пользователи  WHERE Логин='" + txtLogin_R.Text + "' and Пароль='" + txtPassword_R.Text + "'";
                         con1.Open();
                         SqlCommand cmd = new SqlCommand(query, con1);
                         SqlDataReader reader = cmd.ExecuteReader();
@@ -53,7 +55,7 @@ namespace УП_ИСРПО
                         else
                         {
                             reader.Close();
-                            string insertquery = "INSERT INTO Пользователи (Логин, Пароль) VALUES ('" + Логин + "','" + Пароль + "')";
+                            string insertquery = "INSERT INTO Пользователи (Логин, Пароль) VALUES ('" + Логин + "','" + Пароль + "','"+Роль+"')";
                             SqlCommand cmd2 = new SqlCommand(insertquery, con1);
                             cmd2.ExecuteNonQuery();
                             MessageBox.Show("Вы успешно зарегистрированы");
@@ -78,18 +80,23 @@ namespace УП_ИСРПО
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
+            txtLogin_R.Text = "";
+            txtPassword_R.Text = "";
             textBox3.Text = "";
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void BtnClose_R_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 fr = new Form1();
             fr.Show();
+        }
+
+        private void txtRole_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
