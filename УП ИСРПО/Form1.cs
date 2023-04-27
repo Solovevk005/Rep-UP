@@ -18,7 +18,7 @@ namespace УП_ИСРПО
         public Form1()
         {
             InitializeComponent();
-            txtPassword.UseSystemPasswordChar = false;
+            txtPassword.PasswordChar = '*';
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
