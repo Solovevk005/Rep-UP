@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace УП_ИСРПО
 {
-    public partial class Form1 : Form
+    public partial class Авторизация : Form
     {
-        public Form1()
+        public Авторизация()
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
@@ -46,26 +46,28 @@ namespace УП_ИСРПО
                         string role_Login = Role.ToString();
                         if (role_Login == "True")
                         {
-                            Form3 frm3 = new Form3();
+                            Главная frm3 = new Главная();
                             frm3.btnDelete_1.Visible = true;
                             frm3.btnSave_1.Visible = true;
                             frm3.btnDobovlenie_1.Visible = true;
                             frm3.btnDobovlenie.Visible = true;
                             frm3.btnDelete.Visible = true;
                             frm3.button10.Visible = true;
+                            frm3.btnProd.Visible = false;
                             frm3.Show();
                             this.Hide();
                         }
                         else if (role_Login == "False")
                         {
-                            Form3 frm5 = new Form3();
+                            Главная frm5 = new Главная();
                             frm5.btnDelete_1.Visible = false;
                             frm5.btnSave_1.Visible = false;
                             frm5.btnDobovlenie_1.Visible = false;
                             frm5.btnDobovlenie.Visible = false;
                             frm5.btnDelete.Visible = false;
                             frm5.button10.Visible = false;
-                            frm5.Show();
+                            frm5.btnProd.Visible = true;
+                        frm5.Show();
                             this.Hide();
                         }
                     }
@@ -75,7 +77,7 @@ namespace УП_ИСРПО
 
         private void btnreg_Click(object sender, EventArgs e)
         {
-            Form2 frm2 = new Form2();
+            Регистрация frm2 = new Регистрация();
             frm2.Show();
             this.Hide();
         }

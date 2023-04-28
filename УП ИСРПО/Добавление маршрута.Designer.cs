@@ -46,6 +46,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.маршрутыTableAdapter1 = new УП_ИСРПО.SolovevkDataSet5TableAdapters.МаршрутыTableAdapter();
             this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet4)).BeginInit();
             this.SuspendLayout();
@@ -122,7 +124,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(238, 273);
+            this.textBox4.Location = new System.Drawing.Point(238, 305);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(214, 27);
@@ -131,7 +133,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(76, 275);
+            this.label5.Location = new System.Drawing.Point(76, 307);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 19);
@@ -140,7 +142,7 @@
             // 
             // btnDob
             // 
-            this.btnDob.Location = new System.Drawing.Point(272, 335);
+            this.btnDob.Location = new System.Drawing.Point(272, 367);
             this.btnDob.Margin = new System.Windows.Forms.Padding(4);
             this.btnDob.Name = "btnDob";
             this.btnDob.Size = new System.Drawing.Size(181, 32);
@@ -174,7 +176,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(79, 335);
+            this.button2.Location = new System.Drawing.Point(79, 367);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(181, 32);
@@ -192,19 +194,46 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(135, 30);
+            this.label6.Location = new System.Drawing.Point(156, 30);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(240, 19);
             this.label6.TabIndex = 32;
             this.label6.Text = "Добавление нового маршрута";
             // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(76, 265);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 19);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Цена билета";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "4500",
+            "10000",
+            "15000",
+            "20000",
+            "25000"});
+            this.comboBox2.Location = new System.Drawing.Point(238, 262);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(215, 27);
+            this.comboBox2.TabIndex = 33;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
             // Добавление_маршрута
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(522, 412);
+            this.ClientSize = new System.Drawing.Size(565, 469);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
@@ -249,5 +278,7 @@
         private System.Windows.Forms.Button button2;
         private SolovevkDataSet5TableAdapters.МаршрутыTableAdapter маршрутыTableAdapter1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

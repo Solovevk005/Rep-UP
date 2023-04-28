@@ -8,14 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace УП_ИСРПО
 {
-    public partial class Form2 : Form
+    public partial class Регистрация : Form
     {
-        public Form2()
+        public Регистрация()
         {
             InitializeComponent();
+        //    txtPassword_R.PasswordChar = '*';
+        //    txtPodver.PasswordChar= '*';
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -25,19 +29,15 @@ namespace УП_ИСРПО
 
         private void btnReg_Click(object sender, EventArgs e)
         {
-            if (txtLogin_R.Text != "" && txtPassword_R.Text != "" && textBox3.Text != "")
+            if (txtLogin_R.Text != "" && txtPassword_R.Text != "" && txtPodver.Text != "" && txtRole.Text != "")
             {
-                if (textBox3.Text == txtPassword_R.Text)
+                if (txtPodver.Text == txtPassword_R.Text)
                 {
-                    if (txtPassword_R.Text.Length >= 6 && textBox3.Text.Length >= 6)
-
+                    string Логин = txtLogin_R.Text.Trim();
+                    string Пароль = txtPassword_R.Text.Trim();
+                    string Роль = txtRole.Text.Trim();
+                    if (CheckPassword(Пароль))
                     {
-                        string Логин = txtLogin_R.Text.Trim();
-                        string Пароль = txtPassword_R.Text.Trim();
-                        string Роль = txtRole.Text.Trim();
-                        
-
-
                         SqlConnection con1 = new SqlConnection(@"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk");
                         string query = "Select * FROM Пользователи  WHERE Логин='" + txtLogin_R.Text + "' and Пароль='" + txtPassword_R.Text + "'";
                         con1.Open();
@@ -49,13 +49,13 @@ namespace УП_ИСРПО
                             MessageBox.Show("Данный пользователь уже сушествует");
                             reader.Close();
                             MessageBox.Show("Вы зарегистрированы");
-                            Form2.ActiveForm.Close();
+                            Регистрация.ActiveForm.Close();
 
                         }
                         else
                         {
                             reader.Close();
-                            string insertquery = "INSERT INTO Пользователи (Логин, Пароль) VALUES ('" + Логин + "','" + Пароль + "','"+Роль+"')";
+                            string insertquery = "INSERT INTO Пользователи (Логин, Пароль,Роль) VALUES ('" + Логин + "','" + Пароль + "','"+Роль+"')";
                             SqlCommand cmd2 = new SqlCommand(insertquery, con1);
                             cmd2.ExecuteNonQuery();
                             MessageBox.Show("Вы успешно зарегистрированы");
@@ -66,7 +66,7 @@ namespace УП_ИСРПО
                     }
                     else
                     {
-                        MessageBox.Show("Пароль должен иметь длину больше или равно 6 символов");
+                        MessageBox.Show("Пароль должен содержать минимум 6 символов, включая как минимум 1 прописную букву, 1 цифру и 1 символ из набора: ! @ # $ % ^.");
                     }
                 }
                 else
@@ -80,17 +80,38 @@ namespace УП_ИСРПО
             }
         }
 
+        private bool CheckPassword(string Password)
+        {
+            // Проверяем длину пароля
+            if (Password.Length < 6)
+                return false;
+
+            // Проверяем наличие прописных букв
+            if (!Regex.IsMatch(Password, "[A-Z]"))
+                return false;
+
+            // Проверяем наличие цифр
+            if (!Regex.IsMatch(Password, "[0-9]"))
+                return false;
+
+            // Проверяем наличие специальных символов
+            if (!Regex.IsMatch(Password, "[!@#$%^]"))
+                return false;
+
+            return true;
+        }
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtLogin_R.Text = "";
             txtPassword_R.Text = "";
-            textBox3.Text = "";
+            txtPodver.Text = "";
         }
 
         private void BtnClose_R_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 fr = new Form1();
+            Авторизация fr = new Авторизация();
             fr.Show();
         }
 

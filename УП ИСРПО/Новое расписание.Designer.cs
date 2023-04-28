@@ -47,6 +47,8 @@
             this.btnDobav = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -186,7 +188,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(56, 466);
+            this.label8.Location = new System.Drawing.Point(56, 501);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 19);
             this.label8.TabIndex = 15;
@@ -195,7 +197,7 @@
             // textBox8
             // 
             this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(227, 466);
+            this.textBox8.Location = new System.Drawing.Point(227, 501);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(254, 27);
@@ -204,7 +206,7 @@
             // btnDobav
             // 
             this.btnDobav.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnDobav.Location = new System.Drawing.Point(271, 536);
+            this.btnDobav.Location = new System.Drawing.Point(261, 558);
             this.btnDobav.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDobav.Name = "btnDobav";
             this.btnDobav.Size = new System.Drawing.Size(210, 40);
@@ -216,7 +218,7 @@
             // btnClose
             // 
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnClose.Location = new System.Drawing.Point(54, 536);
+            this.btnClose.Location = new System.Drawing.Point(44, 558);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(210, 40);
@@ -236,12 +238,38 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Добавление новой расписании";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "4500",
+            "10000",
+            "15000",
+            "20000",
+            "25000"});
+            this.comboBox1.Location = new System.Drawing.Point(227, 449);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(254, 27);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(56, 452);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 19);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Цена билета";
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(595, 678);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDobav);
@@ -291,5 +319,7 @@
         private System.Windows.Forms.Button btnDobav;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label10;
     }
 }

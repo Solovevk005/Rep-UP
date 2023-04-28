@@ -11,15 +11,19 @@ using System.Windows.Forms;
 
 namespace УП_ИСРПО
 {
-    public partial class Form3 : Form
+    public partial class Главная : Form
     {
-        public Form3()
+        public Главная()
         {
             InitializeComponent();
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet8.Маршруты". При необходимости она может быть перемещена или удалена.
+            this.маршрутыTableAdapter1.Fill(this.solovevkDataSet8.Маршруты);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet7.Расписание". При необходимости она может быть перемещена или удалена.
+            this.расписаниеTableAdapter1.Fill(this.solovevkDataSet7.Расписание);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet6.Маршруты". При необходимости она может быть перемещена или удалена.
             this.маршрутыTableAdapter.Fill(this.solovevkDataSet6.Маршруты);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet3.Расписание". При необходимости она может быть перемещена или удалена.
@@ -34,12 +38,6 @@ namespace УП_ИСРПО
 
         }
 
-        private void btnVoz_Click(object sender, EventArgs e)
-        {
-            Form5 fr2 = new Form5();
-            fr2.Show();
-            this.Hide();
-        }
         
         //поиск динамический
         private void txtPoisk_TextChanged(object sender, EventArgs e)
@@ -200,7 +198,7 @@ namespace УП_ИСРПО
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 fr = new Form1();
+            Авторизация fr = new Авторизация();
             fr.Show();
         }
 
