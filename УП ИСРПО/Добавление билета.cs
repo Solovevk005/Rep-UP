@@ -37,13 +37,15 @@ namespace УП_ИСРПО
             {
                 string Билет = txtbilet.Text.Trim();
                 string Пассажир = txtPas.Text.Trim();
+                string ФИО_пассажира = txtFio.Text.Trim();
                 string Дата_продажи = txtdateP.Text.Trim();
                 string Цена_билета = txtCena.Text.Trim();
                 string Способ_оплаты = comboBox1.Text.Trim();
+                
                
 
                 SqlConnection con1 = new SqlConnection(@"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk");
-                string insertquery = "INSERT INTO Продажа_билетов(Код_билета, Код_пассажира,Дата_продажи,Цена_билета,Способ_оплаты) VALUES ('" + Билет + "','" + Пассажир + "','" + Дата_продажи + "','" + Цена_билета + "','" + Способ_оплаты + "')";
+                string insertquery = "INSERT INTO Продажа_билетов(Код_билета, Код_пассажира,Фамилия_пассажира,Дата_продажи,Цена_билета,Способ_оплаты) VALUES ('" + Билет + "','" + Пассажир + "','"+ФИО_пассажира + "','" + Дата_продажи + "','" + Цена_билета + "','" + Способ_оплаты + "')";
                 SqlCommand cmd2 = new SqlCommand(insertquery, con1);
                 con1.Open();
                 cmd2.ExecuteNonQuery();

@@ -32,6 +32,7 @@ namespace УП_ИСРПО
             if (comboBox1.Text!= "" && textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
             {
                 string Код_поезда = comboBox1.Text.Trim();
+                string Название_поезда = txtPoezda.Text.Trim();
                 string Пункт_отправление = textBox1.Text.Trim();
                 string Пункт_прибытия = textBox2.Text.Trim();
                 string Дата_отправление = textBox3.Text.Trim();
@@ -39,7 +40,7 @@ namespace УП_ИСРПО
                 string Станция = textBox4.Text.Trim();
 
                 SqlConnection con1 = new SqlConnection(@"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk");
-                string insertquery = "INSERT INTO Маршруты(Код_поезда, Пункт_отправление,Пункт_прибытия,Дата_отправление,Цена_билета,Станция) VALUES ('" + Код_поезда + "','" + Пункт_отправление + "','" + Пункт_прибытия + "','" + Дата_отправление + "','" + Цена_билета + "','"+ Станция + "')";
+                string insertquery = "INSERT INTO Маршруты(Код_поезда,Название_поезда, Пункт_отправление,Пункт_прибытия,Дата_отправление,Цена_билета,Станция) VALUES ('" + Код_поезда + "','"+ Название_поезда + "','" + Пункт_отправление + "','" + Пункт_прибытия + "','" + Дата_отправление + "','" + Цена_билета + "','"+ Станция + "')";
                 SqlCommand cmd2 = new SqlCommand(insertquery, con1);
                 con1.Open();
                 cmd2.ExecuteNonQuery();

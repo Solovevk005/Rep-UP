@@ -25,6 +25,7 @@ namespace УП_ИСРПО
             {
                 string Код_поезда = textBox1.Text.Trim();
                 string Код_маршрута = textBox2.Text.Trim();
+                string Название_поезда = txtPoezd.Text.Trim();
                 string Пункт_отправление = textBox3.Text.Trim();
                 string Пункт_прибытия = textBox4.Text.Trim();
                 string Станция = textBox5.Text.Trim();
@@ -35,7 +36,7 @@ namespace УП_ИСРПО
                 
 
                 SqlConnection con1 = new SqlConnection(@"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk");
-                string insertquery = "INSERT INTO Расписание(Код_поезда,Код_маршрута, Пункт_отправление,Пункт_прибытия,Станция,Регион,Дата_отправление,Цена_билета,Дата_прибытия) VALUES ('" + Код_поезда + "','" + Код_маршрута + "','" + Пункт_отправление + "','" + Пункт_прибытия + "','" + Станция + "','" + Регион + "','" + Дата_отправление + "','" + Цена_билета + "','"+Дата_прибытия+"')";
+                string insertquery = "INSERT INTO Расписание(Код_поезда,Код_маршрута,Название_поезда, Пункт_отправление,Пункт_прибытия,Станция,Регион,Дата_отправление,Цена_билета,Дата_прибытия) VALUES ('" + Код_поезда + "','" + Код_маршрута + "','"+Название_поезда+"','" + Пункт_отправление + "','" + Пункт_прибытия + "','" + Станция + "','" + Регион + "','" + Дата_отправление + "','" + Цена_билета + "','"+Дата_прибытия+"')";
                 SqlCommand cmd2 = new SqlCommand(insertquery, con1);
                 con1.Open();
                 cmd2.ExecuteNonQuery();

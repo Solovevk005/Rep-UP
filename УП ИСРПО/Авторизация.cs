@@ -44,7 +44,7 @@ namespace УП_ИСРПО
                         string user_Login = Login.ToString();
                         string password_Login = Password.ToString();
                         string role_Login = Role.ToString();
-                        if (role_Login == "True")
+                        if (role_Login == "Администратор")
                         {
                             Главная frm3 = new Главная();
                             frm3.btnDelete_1.Visible = true;
@@ -57,7 +57,7 @@ namespace УП_ИСРПО
                             frm3.Show();
                             this.Hide();
                         }
-                        else if (role_Login == "False")
+                        else if (role_Login == "Пассажир")
                         {
                             Главная frm5 = new Главная();
                             frm5.btnDelete_1.Visible = false;
@@ -72,6 +72,10 @@ namespace УП_ИСРПО
                         }
                     }
                 }
+            else
+            {
+                MessageBox.Show("Вы ввели не корректные данные, повторите попытку!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
         }
 
 

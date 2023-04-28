@@ -25,15 +25,16 @@ namespace УП_ИСРПО
             {
                 string Код_продажи = txtProdaj.Text.Trim();
                 string Код_билета = txtbilet_1.Text.Trim();
-                string Цена_билета = txtCenna.Text.Trim();
                 string Код_пассажира = txtPassaj.Text.Trim();
+                string ФИО_пассажира = txtFIO.Text.Trim();  
+                string Цена_билета = txtCenna.Text.Trim();
                 string Дата_возврата = txtdatevoz.Text.Trim();
 
 
 
 
                 SqlConnection con1 = new SqlConnection(@"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk");
-                string insertquery = "INSERT INTO Возврат_билетов(Код_продажи, Код_билета,Цена_билета,Код_пассажира,Дата_возврата) VALUES ('" + Код_продажи + "','" + Код_билета + "','" + Цена_билета + "','" + Код_пассажира + "','" + Дата_возврата + "')";
+                string insertquery = "INSERT INTO Возврат_билетов(Код_продажи, Код_билета,Код_пассажира,Фамилия_пассажира,Цена_билета,Дата_возврата) VALUES ('" + Код_продажи + "','" + Код_билета + "','" + Код_пассажира + "','" + ФИО_пассажира + "','" + Цена_билета + "','"+ Дата_возврата + "')";
                 SqlCommand cmd2 = new SqlCommand(insertquery, con1);
                 con1.Open();
                 cmd2.ExecuteNonQuery();

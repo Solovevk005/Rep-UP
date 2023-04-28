@@ -20,14 +20,11 @@ namespace УП_ИСРПО
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet8.Маршруты". При необходимости она может быть перемещена или удалена.
-            this.маршрутыTableAdapter1.Fill(this.solovevkDataSet8.Маршруты);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet7.Расписание". При необходимости она может быть перемещена или удалена.
-            this.расписаниеTableAdapter1.Fill(this.solovevkDataSet7.Расписание);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet6.Маршруты". При необходимости она может быть перемещена или удалена.
-            this.маршрутыTableAdapter.Fill(this.solovevkDataSet6.Маршруты);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet3.Расписание". При необходимости она может быть перемещена или удалена.
-            this.расписаниеTableAdapter.Fill(this.solovevkDataSet3.Расписание);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet17.Маршруты". При необходимости она может быть перемещена или удалена.
+            this.маршрутыTableAdapter2.Fill(this.solovevkDataSet17.Маршруты);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "solovevkDataSet16.Расписание". При необходимости она может быть перемещена или удалена.
+            this.расписаниеTableAdapter2.Fill(this.solovevkDataSet16.Расписание);
+           
         }
 
         private void btnProd_Click(object sender, EventArgs e)
@@ -170,10 +167,10 @@ namespace УП_ИСРПО
         {
             string sql = @"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk";
             SqlConnection con = new SqlConnection(sql);
-            SqlDataAdapter РасписаниеTableAdapter = new SqlDataAdapter();
-            SqlCommandBuilder Conbuild = new SqlCommandBuilder(РасписаниеTableAdapter);
-            SolovevkDataSet3 solovevkDataSet = new SolovevkDataSet3();
-            расписаниеTableAdapter.Update(solovevkDataSet3.Расписание);
+            SqlDataAdapter расписаниеTableAdapter2 = new SqlDataAdapter();
+            SqlCommandBuilder Conbuild = new SqlCommandBuilder(расписаниеTableAdapter2);
+            SolovevkDataSet16 solovevkDataSet16 = new SolovevkDataSet16();
+            расписаниеTableAdapter2.Update(solovevkDataSet16.Расписание);
             MessageBox.Show("Вы успешно обновили базу даныых");
         }
 
@@ -181,10 +178,10 @@ namespace УП_ИСРПО
         {
             string sql = @"Data Source=KONSTANTIN\SQLEXPRESS;Integrated Security=True;Initial Catalog=Solovevk";
             SqlConnection con = new SqlConnection(sql);
-            SqlDataAdapter МаршрутыTableAdapter = new SqlDataAdapter();
-            SqlCommandBuilder Conbuild = new SqlCommandBuilder(МаршрутыTableAdapter);
-            SolovevkDataSet6 solovevkDataSet = new SolovevkDataSet6();
-            маршрутыTableAdapter.Update(solovevkDataSet6.Маршруты);
+            SqlDataAdapter МаршрутыTableAdapter2 = new SqlDataAdapter();
+            SqlCommandBuilder Conbuild = new SqlCommandBuilder(МаршрутыTableAdapter2);
+            SolovevkDataSet17 solovevkDataSet = new SolovevkDataSet17();
+            маршрутыTableAdapter2.Update(solovevkDataSet.Маршруты);
             MessageBox.Show("Вы успешно обновили базу даныых");
         }
 

@@ -56,10 +56,18 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.расписаниеBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.solovevkDataSet7 = new УП_ИСРПО.SolovevkDataSet7();
+            this.расписаниеTableAdapter1 = new УП_ИСРПО.SolovevkDataSet7TableAdapters.РасписаниеTableAdapter();
+            this.маршрутыBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.solovevkDataSet8 = new УП_ИСРПО.SolovevkDataSet8();
+            this.маршрутыTableAdapter1 = new УП_ИСРПО.SolovevkDataSet8TableAdapters.МаршрутыTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.кодрасписанияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кодпоездаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кодмаршрутаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.solovevkDataSet16 = new УП_ИСРПО.SolovevkDataSet16();
+            this.расписаниеBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.расписаниеTableAdapter2 = new УП_ИСРПО.SolovevkDataSet16TableAdapters.РасписаниеTableAdapter();
+            this.названиепоездаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.пунктотправлениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.пунктприбытияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.станцияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,32 +75,31 @@
             this.датаотправлениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценабилетаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаприбытияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.расписаниеBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.solovevkDataSet7 = new УП_ИСРПО.SolovevkDataSet7();
-            this.расписаниеTableAdapter1 = new УП_ИСРПО.SolovevkDataSet7TableAdapters.РасписаниеTableAdapter();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.кодмаршрутаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кодпоездаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solovevkDataSet17 = new УП_ИСРПО.SolovevkDataSet17();
+            this.маршрутыBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.маршрутыTableAdapter2 = new УП_ИСРПО.SolovevkDataSet17TableAdapters.МаршрутыTableAdapter();
+            this.названиепоездаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.пунктотправлениеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.пунктприбытияDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаотправлениеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценабилетаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.станцияDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.маршрутыBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.solovevkDataSet8 = new УП_ИСРПО.SolovevkDataSet8();
-            this.маршрутыTableAdapter1 = new УП_ИСРПО.SolovevkDataSet8TableAdapters.МаршрутыTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnProd
@@ -251,15 +258,40 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
+            // расписаниеBindingSource1
+            // 
+            this.расписаниеBindingSource1.DataMember = "Расписание";
+            this.расписаниеBindingSource1.DataSource = this.solovevkDataSet7;
+            // 
+            // solovevkDataSet7
+            // 
+            this.solovevkDataSet7.DataSetName = "SolovevkDataSet7";
+            this.solovevkDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // расписаниеTableAdapter1
+            // 
+            this.расписаниеTableAdapter1.ClearBeforeFill = true;
+            // 
+            // маршрутыBindingSource2
+            // 
+            this.маршрутыBindingSource2.DataMember = "Маршруты";
+            this.маршрутыBindingSource2.DataSource = this.solovevkDataSet8;
+            // 
+            // solovevkDataSet8
+            // 
+            this.solovevkDataSet8.DataSetName = "SolovevkDataSet8";
+            this.solovevkDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // маршрутыTableAdapter1
+            // 
+            this.маршрутыTableAdapter1.ClearBeforeFill = true;
+            // 
             // dataGridView1
             // 
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.кодрасписанияDataGridViewTextBoxColumn,
-            this.кодпоездаDataGridViewTextBoxColumn,
-            this.кодмаршрутаDataGridViewTextBoxColumn,
+            this.названиепоездаDataGridViewTextBoxColumn,
             this.пунктотправлениеDataGridViewTextBoxColumn,
             this.пунктприбытияDataGridViewTextBoxColumn,
             this.станцияDataGridViewTextBoxColumn,
@@ -267,28 +299,46 @@
             this.датаотправлениеDataGridViewTextBoxColumn,
             this.ценабилетаDataGridViewTextBoxColumn,
             this.датаприбытияDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.расписаниеBindingSource1;
+            this.dataGridView1.DataSource = this.расписаниеBindingSource2;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             // 
-            // кодрасписанияDataGridViewTextBoxColumn
+            // dataGridView2
             // 
-            this.кодрасписанияDataGridViewTextBoxColumn.DataPropertyName = "Код_расписания";
-            resources.ApplyResources(this.кодрасписанияDataGridViewTextBoxColumn, "кодрасписанияDataGridViewTextBoxColumn");
-            this.кодрасписанияDataGridViewTextBoxColumn.Name = "кодрасписанияDataGridViewTextBoxColumn";
-            this.кодрасписанияDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.названиепоездаDataGridViewTextBoxColumn1,
+            this.пунктотправлениеDataGridViewTextBoxColumn1,
+            this.пунктприбытияDataGridViewTextBoxColumn1,
+            this.датаотправлениеDataGridViewTextBoxColumn1,
+            this.ценабилетаDataGridViewTextBoxColumn1,
+            this.станцияDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.маршрутыBindingSource3;
+            resources.ApplyResources(this.dataGridView2, "dataGridView2");
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
             // 
-            // кодпоездаDataGridViewTextBoxColumn
+            // solovevkDataSet16
             // 
-            this.кодпоездаDataGridViewTextBoxColumn.DataPropertyName = "Код_поезда";
-            resources.ApplyResources(this.кодпоездаDataGridViewTextBoxColumn, "кодпоездаDataGridViewTextBoxColumn");
-            this.кодпоездаDataGridViewTextBoxColumn.Name = "кодпоездаDataGridViewTextBoxColumn";
+            this.solovevkDataSet16.DataSetName = "SolovevkDataSet16";
+            this.solovevkDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // кодмаршрутаDataGridViewTextBoxColumn
+            // расписаниеBindingSource2
             // 
-            this.кодмаршрутаDataGridViewTextBoxColumn.DataPropertyName = "Код_маршрута";
-            resources.ApplyResources(this.кодмаршрутаDataGridViewTextBoxColumn, "кодмаршрутаDataGridViewTextBoxColumn");
-            this.кодмаршрутаDataGridViewTextBoxColumn.Name = "кодмаршрутаDataGridViewTextBoxColumn";
+            this.расписаниеBindingSource2.DataMember = "Расписание";
+            this.расписаниеBindingSource2.DataSource = this.solovevkDataSet16;
+            // 
+            // расписаниеTableAdapter2
+            // 
+            this.расписаниеTableAdapter2.ClearBeforeFill = true;
+            // 
+            // названиепоездаDataGridViewTextBoxColumn
+            // 
+            this.названиепоездаDataGridViewTextBoxColumn.DataPropertyName = "Название_поезда";
+            resources.ApplyResources(this.названиепоездаDataGridViewTextBoxColumn, "названиепоездаDataGridViewTextBoxColumn");
+            this.названиепоездаDataGridViewTextBoxColumn.Name = "названиепоездаDataGridViewTextBoxColumn";
             // 
             // пунктотправлениеDataGridViewTextBoxColumn
             // 
@@ -332,49 +382,25 @@
             resources.ApplyResources(this.датаприбытияDataGridViewTextBoxColumn, "датаприбытияDataGridViewTextBoxColumn");
             this.датаприбытияDataGridViewTextBoxColumn.Name = "датаприбытияDataGridViewTextBoxColumn";
             // 
-            // расписаниеBindingSource1
+            // solovevkDataSet17
             // 
-            this.расписаниеBindingSource1.DataMember = "Расписание";
-            this.расписаниеBindingSource1.DataSource = this.solovevkDataSet7;
+            this.solovevkDataSet17.DataSetName = "SolovevkDataSet17";
+            this.solovevkDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // solovevkDataSet7
+            // маршрутыBindingSource3
             // 
-            this.solovevkDataSet7.DataSetName = "SolovevkDataSet7";
-            this.solovevkDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.маршрутыBindingSource3.DataMember = "Маршруты";
+            this.маршрутыBindingSource3.DataSource = this.solovevkDataSet17;
             // 
-            // расписаниеTableAdapter1
+            // маршрутыTableAdapter2
             // 
-            this.расписаниеTableAdapter1.ClearBeforeFill = true;
+            this.маршрутыTableAdapter2.ClearBeforeFill = true;
             // 
-            // dataGridView2
+            // названиепоездаDataGridViewTextBoxColumn1
             // 
-            resources.ApplyResources(this.dataGridView2, "dataGridView2");
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.кодмаршрутаDataGridViewTextBoxColumn1,
-            this.кодпоездаDataGridViewTextBoxColumn1,
-            this.пунктотправлениеDataGridViewTextBoxColumn1,
-            this.пунктприбытияDataGridViewTextBoxColumn1,
-            this.датаотправлениеDataGridViewTextBoxColumn1,
-            this.ценабилетаDataGridViewTextBoxColumn1,
-            this.станцияDataGridViewTextBoxColumn1});
-            this.dataGridView2.DataSource = this.маршрутыBindingSource2;
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            // 
-            // кодмаршрутаDataGridViewTextBoxColumn1
-            // 
-            this.кодмаршрутаDataGridViewTextBoxColumn1.DataPropertyName = "Код_маршрута";
-            resources.ApplyResources(this.кодмаршрутаDataGridViewTextBoxColumn1, "кодмаршрутаDataGridViewTextBoxColumn1");
-            this.кодмаршрутаDataGridViewTextBoxColumn1.Name = "кодмаршрутаDataGridViewTextBoxColumn1";
-            this.кодмаршрутаDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // кодпоездаDataGridViewTextBoxColumn1
-            // 
-            this.кодпоездаDataGridViewTextBoxColumn1.DataPropertyName = "Код_поезда";
-            resources.ApplyResources(this.кодпоездаDataGridViewTextBoxColumn1, "кодпоездаDataGridViewTextBoxColumn1");
-            this.кодпоездаDataGridViewTextBoxColumn1.Name = "кодпоездаDataGridViewTextBoxColumn1";
+            this.названиепоездаDataGridViewTextBoxColumn1.DataPropertyName = "Название_поезда";
+            resources.ApplyResources(this.названиепоездаDataGridViewTextBoxColumn1, "названиепоездаDataGridViewTextBoxColumn1");
+            this.названиепоездаDataGridViewTextBoxColumn1.Name = "названиепоездаDataGridViewTextBoxColumn1";
             // 
             // пунктотправлениеDataGridViewTextBoxColumn1
             // 
@@ -405,20 +431,6 @@
             this.станцияDataGridViewTextBoxColumn1.DataPropertyName = "Станция";
             resources.ApplyResources(this.станцияDataGridViewTextBoxColumn1, "станцияDataGridViewTextBoxColumn1");
             this.станцияDataGridViewTextBoxColumn1.Name = "станцияDataGridViewTextBoxColumn1";
-            // 
-            // маршрутыBindingSource2
-            // 
-            this.маршрутыBindingSource2.DataMember = "Маршруты";
-            this.маршрутыBindingSource2.DataSource = this.solovevkDataSet8;
-            // 
-            // solovevkDataSet8
-            // 
-            this.solovevkDataSet8.DataSetName = "SolovevkDataSet8";
-            this.solovevkDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // маршрутыTableAdapter1
-            // 
-            this.маршрутыTableAdapter1.ClearBeforeFill = true;
             // 
             // Главная
             // 
@@ -453,12 +465,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solovevkDataSet17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.маршрутыBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,13 +506,19 @@
         public System.Windows.Forms.Button btnDobovlenie_1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private SolovevkDataSet7 solovevkDataSet7;
         private System.Windows.Forms.BindingSource расписаниеBindingSource1;
         private SolovevkDataSet7TableAdapters.РасписаниеTableAdapter расписаниеTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодрасписанияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодпоездаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодмаршрутаDataGridViewTextBoxColumn;
+        private SolovevkDataSet8 solovevkDataSet8;
+        private System.Windows.Forms.BindingSource маршрутыBindingSource2;
+        private SolovevkDataSet8TableAdapters.МаршрутыTableAdapter маршрутыTableAdapter1;
+        public System.Windows.Forms.Button btnProd;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private SolovevkDataSet16 solovevkDataSet16;
+        private System.Windows.Forms.BindingSource расписаниеBindingSource2;
+        private SolovevkDataSet16TableAdapters.РасписаниеTableAdapter расписаниеTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn названиепоездаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn пунктотправлениеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn пунктприбытияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn станцияDataGridViewTextBoxColumn;
@@ -504,17 +526,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn датаотправлениеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ценабилетаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаприбытияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private SolovevkDataSet8 solovevkDataSet8;
-        private System.Windows.Forms.BindingSource маршрутыBindingSource2;
-        private SolovevkDataSet8TableAdapters.МаршрутыTableAdapter маршрутыTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодмаршрутаDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодпоездаDataGridViewTextBoxColumn1;
+        private SolovevkDataSet17 solovevkDataSet17;
+        private System.Windows.Forms.BindingSource маршрутыBindingSource3;
+        private SolovevkDataSet17TableAdapters.МаршрутыTableAdapter маршрутыTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn названиепоездаDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn пунктотправлениеDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn пунктприбытияDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаотправлениеDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ценабилетаDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn станцияDataGridViewTextBoxColumn1;
-        public System.Windows.Forms.Button btnProd;
     }
 }

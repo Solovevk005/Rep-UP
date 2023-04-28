@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SolovevkDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SolovevkDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SolovevkDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SolovevkDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SolovevkDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SolovevkDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet19.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Авторизация.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +303,72 @@
     </None>
     <None Include="SolovevkDataSet13.xss">
       <DependentUpon>SolovevkDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet14.xsc">
+      <DependentUpon>SolovevkDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet14.xss">
+      <DependentUpon>SolovevkDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet15.xsc">
+      <DependentUpon>SolovevkDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet15.xss">
+      <DependentUpon>SolovevkDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet16.xsc">
+      <DependentUpon>SolovevkDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet16.xss">
+      <DependentUpon>SolovevkDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet17.xsc">
+      <DependentUpon>SolovevkDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet17.xss">
+      <DependentUpon>SolovevkDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet18.xsc">
+      <DependentUpon>SolovevkDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet18.xss">
+      <DependentUpon>SolovevkDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet19.xsc">
+      <DependentUpon>SolovevkDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet19.xss">
+      <DependentUpon>SolovevkDataSet19.xsd</DependentUpon>
     </None>
     <None Include="SolovevkDataSet2.xsc">
       <DependentUpon>SolovevkDataSet2.xsd</DependentUpon>
