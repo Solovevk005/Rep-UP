@@ -159,9 +159,6 @@
   <metadata name="solovevkDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>186, 17</value>
   </metadata>
-  <metadata name="solovevkDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>186, 17</value>
-  </metadata>
   <metadata name="расписаниеTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>601, 17</value>
   </metadata>
@@ -369,14 +366,8 @@
   <metadata name="solovevkDataSet5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>832, 17</value>
   </metadata>
-  <metadata name="solovevkDataSet5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>832, 17</value>
-  </metadata>
   <metadata name="маршрутыBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1415, 17</value>
-  </metadata>
-  <metadata name="solovevkDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1238, 17</value>
   </metadata>
   <metadata name="solovevkDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1238, 17</value>
@@ -753,9 +744,6 @@
   <metadata name="solovevkDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 60</value>
   </metadata>
-  <metadata name="solovevkDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 60</value>
-  </metadata>
   <metadata name="расписаниеTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>440, 60</value>
   </metadata>
@@ -765,14 +753,86 @@
   <metadata name="solovevkDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>679, 60</value>
   </metadata>
-  <metadata name="solovevkDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>679, 60</value>
-  </metadata>
   <metadata name="маршрутыTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1093, 60</value>
   </metadata>
+  <data name="названиепоездаDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Название_поезда</value>
+  </data>
+  <data name="названиепоездаDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="названиепоездаDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="пунктотправлениеDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Пункт_отправление</value>
+  </data>
+  <data name="пунктотправлениеDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="пунктотправлениеDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="пунктприбытияDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Пункт_прибытия</value>
+  </data>
+  <data name="пунктприбытияDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="пунктприбытияDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="станцияDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Станция</value>
+  </data>
+  <data name="станцияDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="станцияDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="регионDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Регион</value>
+  </data>
+  <data name="регионDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="регионDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="датаотправлениеDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Дата_отправление</value>
+  </data>
+  <data name="датаотправлениеDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="датаотправлениеDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="ценабилетаDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Цена_билета</value>
+  </data>
+  <data name="ценабилетаDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ценабилетаDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="датаприбытияDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Дата_прибытия</value>
+  </data>
+  <data name="датаприбытияDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="датаприбытияDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
   <metadata name="расписаниеBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>202, 103</value>
+  </metadata>
+  <metadata name="solovevkDataSet16.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 103</value>
   </metadata>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 56</value>
@@ -855,6 +915,9 @@
   <metadata name="маршрутыBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>872, 103</value>
   </metadata>
+  <metadata name="solovevkDataSet17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>687, 103</value>
+  </metadata>
   <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
     <value>789, 56</value>
   </data>
@@ -879,89 +942,8 @@
   <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="solovevkDataSet16.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 103</value>
-  </metadata>
-  <metadata name="расписаниеBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>202, 103</value>
-  </metadata>
   <metadata name="расписаниеTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>448, 103</value>
-  </metadata>
-  <data name="названиепоездаDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Название_поезда</value>
-  </data>
-  <data name="названиепоездаDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="названиепоездаDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="пунктотправлениеDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Пункт_отправление</value>
-  </data>
-  <data name="пунктотправлениеDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="пунктотправлениеDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="пунктприбытияDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Пункт_прибытия</value>
-  </data>
-  <data name="пунктприбытияDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="пунктприбытияDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="станцияDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Станция</value>
-  </data>
-  <data name="станцияDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="станцияDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="регионDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Регион</value>
-  </data>
-  <data name="регионDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="регионDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="датаотправлениеDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Дата_отправление</value>
-  </data>
-  <data name="датаотправлениеDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="датаотправлениеDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="ценабилетаDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Цена_билета</value>
-  </data>
-  <data name="ценабилетаDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="ценабилетаDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="датаприбытияDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Дата_прибытия</value>
-  </data>
-  <data name="датаприбытияDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="датаприбытияDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <metadata name="solovevkDataSet17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>687, 103</value>
   </metadata>
   <metadata name="маршрутыTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1109, 103</value>
@@ -1071,24 +1053,6 @@
   <data name="&gt;&gt;маршрутыTableAdapter1.Type" xml:space="preserve">
     <value>УП_ИСРПО.SolovevkDataSet8TableAdapters.МаршрутыTableAdapter, SolovevkDataSet8.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;solovevkDataSet16.Name" xml:space="preserve">
-    <value>solovevkDataSet16</value>
-  </data>
-  <data name="&gt;&gt;solovevkDataSet16.Type" xml:space="preserve">
-    <value>УП_ИСРПО.SolovevkDataSet16, SolovevkDataSet16.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;расписаниеBindingSource2.Name" xml:space="preserve">
-    <value>расписаниеBindingSource2</value>
-  </data>
-  <data name="&gt;&gt;расписаниеBindingSource2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;расписаниеTableAdapter2.Name" xml:space="preserve">
-    <value>расписаниеTableAdapter2</value>
-  </data>
-  <data name="&gt;&gt;расписаниеTableAdapter2.Type" xml:space="preserve">
-    <value>УП_ИСРПО.SolovevkDataSet16TableAdapters.РасписаниеTableAdapter, SolovevkDataSet16.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;названиепоездаDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>названиепоездаDataGridViewTextBoxColumn</value>
   </data>
@@ -1137,23 +1101,17 @@
   <data name="&gt;&gt;датаприбытияDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;solovevkDataSet17.Name" xml:space="preserve">
-    <value>solovevkDataSet17</value>
+  <data name="&gt;&gt;расписаниеBindingSource2.Name" xml:space="preserve">
+    <value>расписаниеBindingSource2</value>
   </data>
-  <data name="&gt;&gt;solovevkDataSet17.Type" xml:space="preserve">
-    <value>УП_ИСРПО.SolovevkDataSet17, SolovevkDataSet17.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;маршрутыBindingSource3.Name" xml:space="preserve">
-    <value>маршрутыBindingSource3</value>
-  </data>
-  <data name="&gt;&gt;маршрутыBindingSource3.Type" xml:space="preserve">
+  <data name="&gt;&gt;расписаниеBindingSource2.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;маршрутыTableAdapter2.Name" xml:space="preserve">
-    <value>маршрутыTableAdapter2</value>
+  <data name="&gt;&gt;solovevkDataSet16.Name" xml:space="preserve">
+    <value>solovevkDataSet16</value>
   </data>
-  <data name="&gt;&gt;маршрутыTableAdapter2.Type" xml:space="preserve">
-    <value>УП_ИСРПО.SolovevkDataSet17TableAdapters.МаршрутыTableAdapter, SolovevkDataSet17.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;solovevkDataSet16.Type" xml:space="preserve">
+    <value>УП_ИСРПО.SolovevkDataSet16, SolovevkDataSet16.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;названиепоездаDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>названиепоездаDataGridViewTextBoxColumn1</value>
@@ -1190,6 +1148,30 @@
   </data>
   <data name="&gt;&gt;станцияDataGridViewTextBoxColumn1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;маршрутыBindingSource3.Name" xml:space="preserve">
+    <value>маршрутыBindingSource3</value>
+  </data>
+  <data name="&gt;&gt;маршрутыBindingSource3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solovevkDataSet17.Name" xml:space="preserve">
+    <value>solovevkDataSet17</value>
+  </data>
+  <data name="&gt;&gt;solovevkDataSet17.Type" xml:space="preserve">
+    <value>УП_ИСРПО.SolovevkDataSet17, SolovevkDataSet17.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;расписаниеTableAdapter2.Name" xml:space="preserve">
+    <value>расписаниеTableAdapter2</value>
+  </data>
+  <data name="&gt;&gt;расписаниеTableAdapter2.Type" xml:space="preserve">
+    <value>УП_ИСРПО.SolovevkDataSet16TableAdapters.РасписаниеTableAdapter, SolovevkDataSet16.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;маршрутыTableAdapter2.Name" xml:space="preserve">
+    <value>маршрутыTableAdapter2</value>
+  </data>
+  <data name="&gt;&gt;маршрутыTableAdapter2.Type" xml:space="preserve">
+    <value>УП_ИСРПО.SolovevkDataSet17TableAdapters.МаршрутыTableAdapter, SolovevkDataSet17.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Главная</value>

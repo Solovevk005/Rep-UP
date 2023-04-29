@@ -76,6 +76,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SolovevkDataSet19.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SolovevkDataSet201.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet201.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SolovevkDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SolovevkDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolovevkDataSet22.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Авторизация.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -380,6 +395,39 @@
     </None>
     <None Include="SolovevkDataSet2.xss">
       <DependentUpon>SolovevkDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet201.xsc">
+      <DependentUpon>SolovevkDataSet201.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet201.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet201.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet201.xss">
+      <DependentUpon>SolovevkDataSet201.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet21.xsc">
+      <DependentUpon>SolovevkDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet21.xss">
+      <DependentUpon>SolovevkDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet22.xsc">
+      <DependentUpon>SolovevkDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="SolovevkDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolovevkDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SolovevkDataSet22.xss">
+      <DependentUpon>SolovevkDataSet22.xsd</DependentUpon>
     </None>
     <None Include="SolovevkDataSet31.xsc">
       <DependentUpon>SolovevkDataSet31.xsd</DependentUpon>

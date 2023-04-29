@@ -180,8 +180,8 @@ namespace УП_ИСРПО
             SqlConnection con = new SqlConnection(sql);
             SqlDataAdapter МаршрутыTableAdapter2 = new SqlDataAdapter();
             SqlCommandBuilder Conbuild = new SqlCommandBuilder(МаршрутыTableAdapter2);
-            SolovevkDataSet17 solovevkDataSet = new SolovevkDataSet17();
-            маршрутыTableAdapter2.Update(solovevkDataSet.Маршруты);
+            SolovevkDataSet17 solovevkDataSet17 = new SolovevkDataSet17();
+            маршрутыTableAdapter2.Update(solovevkDataSet17.Маршруты);
             MessageBox.Show("Вы успешно обновили базу даныых");
         }
 
