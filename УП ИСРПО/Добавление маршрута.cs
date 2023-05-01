@@ -45,9 +45,12 @@ namespace УП_ИСРПО
                 con1.Open();
                 cmd2.ExecuteNonQuery();
                 MessageBox.Show("Вы успешно добавили маршрут");
-                //Добавление_маршрута.ActiveForm.Close();
-                //con1.Close();
 
+            }
+
+            else
+            {
+                MessageBox.Show("Все поля должны быть заполнены");
             }
         }
 

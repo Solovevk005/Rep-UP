@@ -74,7 +74,7 @@ namespace УП_ИСРПО
                 }
             else
             {
-                MessageBox.Show("Вы ввели не корректные данные, повторите попытку!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Вы ввели не правильный пароль или логин, Введите корректные данные!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             }
         }
 

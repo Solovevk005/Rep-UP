@@ -39,8 +39,6 @@ namespace УП_ИСРПО
                 con1.Open();
                 cmd2.ExecuteNonQuery();
                 MessageBox.Show("Вы успешно совершили возврат");
-                //Добавление_маршрута.ActiveForm.Close();
-                //con1.Close();
             }
         }
 
